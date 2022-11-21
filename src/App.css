@@ -1,0 +1,167 @@
+ul{
+  margin: 0;
+  padding: 0;
+}
+.multi_slider_block {
+  height: 50px;
+  margin-top: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 200px;
+}
+
+.slider__track,
+.slider__range,
+.slider__left-value,
+.slider__right-value {
+  position: absolute;
+}
+
+.slider__track,
+.slider__range {
+  border-radius: 3px;
+  height: 2px;
+  background: #E0E0E0;
+}
+
+.slider__track {
+  background-color: #E0E0E0;
+  width: 100%;
+  z-index: 1;
+}
+
+.slider__range {
+  background: linear-gradient(107.73deg, #D81F5A 0%, #8438BF 100%);
+  z-index: 2;
+}
+
+.slider__left-value,
+.slider__right-value {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #000000;
+
+}
+
+.slider__left-value {
+  left: 6px;
+}
+
+.slider__right-value {
+  right: -4px;
+}
+
+/* Removing the default appearance */
+.thumb,
+.thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0px;
+  width: 200px;
+  outline: none;
+}
+
+.thumb--left {
+  z-index: 3;
+}
+
+.thumb--right {
+  z-index: 4;
+}
+
+/* For Chrome browsers */
+.thumb::-webkit-slider-thumb {
+  background: linear-gradient(107.73deg, #D81F5A 0%, #8438BF 100%);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+/* For Firefox browsers */
+.thumb::-moz-range-thumb {
+  background-color: #f1f5f7;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px #ced4da;
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin-top: 4px;
+  pointer-events: all;
+  position: relative;
+}
+
+.selectbox_selecter .select_color_title {
+  padding: 10px 0;
+}
+
+.bigerbuttion button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  height: 50px;
+  background: linear-gradient(107.73deg, #D81F5A 0%, #8438BF 100%);
+  border: unset;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 6px;
+}
+
+.bigerbuttion button:hover {
+  box-shadow: 1px 6px 6px 0px #00000047;
+}
+
+.subscription_tag {
+  display: flex;
+  margin: 30px 0 15px;
+  align-items: center;
+}
+
+.subscription_tag p {
+  font-weight: 700;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
+.accoirdian_block .accordion-body p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
+.accoirdian_block .accordion-body a {
+  font-weight: 700;
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
+.accoirdian_block .accordion-button {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+.accordion-button:not(.collapsed){
+  background-color: transparent;
+  font-weight: 600;
+  color: #000;
+}
